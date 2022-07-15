@@ -1,0 +1,211 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "express-server",
+    "dateExported": "2022-06-27T17:35:27.094Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "faea6d5c-8ed0-411f-8d8d-fb1f715a9b68",
+            "name": "products",
+            "containerId": "",
+            "created": "2022-06-21T08:13:42.191Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "efe83ce6-1431-49e7-bebe-f4b1f7a0fbd7",
+            "name": "User",
+            "containerId": "",
+            "created": "2022-06-23T05:06:49.346Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7b569b7f-9bd8-4190-91e0-a593209b9b7e",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "faea6d5c-8ed0-411f-8d8d-fb1f715a9b68",
+            "name": "getProducts",
+            "url": "localhost:{{PORT}}/api/v1/products?page=2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-06-21T08:20:47.925Z",
+            "modified": "2022-06-25T18:54:22.345Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9df1121a-7d78-45a2-983b-b873810d7667",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "faea6d5c-8ed0-411f-8d8d-fb1f715a9b68",
+            "name": "singleProduct",
+            "url": "localhost:{{PORT}}/api/v1/product/62ae1e1e5877603d50d251cb",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-06-22T06:17:48.640Z",
+            "modified": "2022-06-25T18:44:50.498Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6dd16bd9-0c48-41ed-943e-6d61a1aa3154",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "faea6d5c-8ed0-411f-8d8d-fb1f715a9b68",
+            "name": "updateProduct",
+            "url": "localhost:{{PORT}}/api/v1/admin/product/62ae1e1e5877603d50d251cB",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2022-06-22T13:10:51.169Z",
+            "modified": "2022-06-25T18:47:01.271Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Smartphone\",\n    \"price\": 150\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e7a98ba9-3f4b-4be1-8f21-adeff66ba7df",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "faea6d5c-8ed0-411f-8d8d-fb1f715a9b68",
+            "name": "createProduct",
+            "url": "localhost:{{PORT}}/api/v1/admin/product/new",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2022-06-23T05:07:54.017Z",
+            "modified": "2022-06-27T12:45:25.700Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{   \"name\": \"product with user id\",\n    \"price\": 91,\n    \"description\": \"Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles\",\n    \"ratings\": 4.5,\n    \"images\": [\n      {\n        \"public_id\": \"93355714-397b-4aa2-9dcb-d021ebb1f107\",\n        \"url\": \"http://placeimg.com/640/480/technics\",\n        \"_id\": \"62ae1e1e5877603d50d251cc\"\n      },\n      {\n        \"public_id\": \"bb0f892e-c4a8-4390-8535-05ccf25af4b9\",\n        \"url\": \"http://placeimg.com/640/480/technics\",\n        \"_id\": \"62ae1e1e5877603d50d251cd\"\n      },\n      {\n        \"public_id\": \"c8964582-e22d-4da5-bb4f-a4a0843ae42f\",\n        \"url\": \"http://placeimg.com/640/480/technics\",\n        \"_id\": \"62ae1e1e5877603d50d251ce\"\n      }\n    ],\n    \"category\": \"Sports\",\n    \"seller\": \"Ebay\",\n    \"stock\": 50,\n    \"numOfReviews\": 30,\n    \"reviews\": [\n      {\n        \"name\": \"Rodolfo Reynolds\",\n        \"rating\": 1,\n        \"comment\": \"comment\",\n        \"_id\": \"62ae1e1e5877603d50d251cf\"\n      }\n    ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aad049b0-1f9b-4874-96cc-23ca2a4d5e23",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "faea6d5c-8ed0-411f-8d8d-fb1f715a9b68",
+            "name": "deleteProduct",
+            "url": "localhost:{{PORT}}/api/v1/admin/product/62b414330185730de22ac6a0",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2022-06-23T07:21:06.691Z",
+            "modified": "2022-06-23T07:22:35.789Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2a1c5efd-32ff-4f08-a6ac-c3ec8917ca2c",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "faea6d5c-8ed0-411f-8d8d-fb1f715a9b68",
+            "name": "filterProduct",
+            "url": "localhost:{{PORT}}/api/v1/products?keyword=smartphone&price[gte]=100&price[lte]=150",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2022-06-25T18:44:38.099Z",
+            "modified": "2022-06-25T18:47:20.923Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "keyword",
+                    "value": "smartphone",
+                    "isPath": false
+                },
+                {
+                    "name": "price[gte]",
+                    "value": "100",
+                    "isPath": false
+                },
+                {
+                    "name": "price[lte]",
+                    "value": "150",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9ad209af-b3a8-484f-948d-5cb055fadcb4",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "efe83ce6-1431-49e7-bebe-f4b1f7a0fbd7",
+            "name": "Create a new user",
+            "url": "localhost:{{PORT}}/api/v1/register/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2022-06-26T12:39:33.569Z",
+            "modified": "2022-06-27T05:06:03.737Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Khalid Khan\",\n    \"email\": \"khalids8774@gmail.com\",\n    \"password\": \"877458\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "045d017f-1bc3-4733-805b-11f87d167e34",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "efe83ce6-1431-49e7-bebe-f4b1f7a0fbd7",
+            "name": "login",
+            "url": "localhost:{{PORT}}/api/v1/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2022-06-26T15:23:15.830Z",
+            "modified": "2022-06-26T18:35:50.074Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"khalidk8774@gmail.com\",\n    \"password\": \"877458\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5e70f086-2f13-4cca-a77e-b26aea277824",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "efe83ce6-1431-49e7-bebe-f4b1f7a0fbd7",
+            "name": "logout",
+            "url": "localhost:{{PORT}}/api/v1/logout",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2022-06-27T08:04:25.507Z",
+            "modified": "2022-06-27T08:07:00.531Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c0e8affa-caef-43e4-8654-2c759d409fb2",
+            "colId": "0ac0d309-f9ad-4c7e-b9dc-a75dc757a016",
+            "containerId": "efe83ce6-1431-49e7-bebe-f4b1f7a0fbd7",
+            "name": "Reset Password",
+            "url": "localhost:{{PORT}}/api/v1/password/forgot",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2022-06-27T17:29:44.035Z",
+            "modified": "2022-06-27T17:32:16.296Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"khalidk874@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
